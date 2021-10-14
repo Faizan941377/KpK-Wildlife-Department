@@ -7,9 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.kpkwildlifedepartment.Dashboard.DashboardActivity;
-import com.example.kpkwildlifedepartment.HumanRecourse.EmployeeQualificationActivity;
-import com.example.kpkwildlifedepartment.HumanRecourse.HumanResourceActivity;
-import com.example.kpkwildlifedepartment.HumanRecourse.Personal_InfoActivity;
 import com.example.kpkwildlifedepartment.R;
 
 public class SplashActivity extends AppCompatActivity {

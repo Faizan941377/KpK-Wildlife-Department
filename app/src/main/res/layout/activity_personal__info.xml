@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HumanRecourse.Personal_InfoActivity">
+    tools:context=".HumanRecourse.HumanResourceForms.Personal_InfoActivity">
 
     <RelativeLayout
         android:id="@+id/action_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorGreen">
+        android:background="@color/colorBackBlue">
 
         <ImageView
             android:id="@+id/iv_personalInfo_back"
@@ -55,7 +55,8 @@
                     android:id="@+id/addImage"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:background="@drawable/background">
+                    android:background="@drawable/background"
+                    android:backgroundTint="@color/colorBackBlue">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/iv_profile_profileImage"
@@ -443,7 +444,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="36dp"
-                    android:background="@drawable/green_ripple_effect"
+                    android:background="@drawable/blue_ripple_effect"
                     android:gravity="center">
 
                     <TextView

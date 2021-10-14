@@ -9,8 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KpkWildlifeDepartment">
-        <activity android:name=".HumanRecourse.EmployeeQualificationActivity"
+        <activity android:name=".ActAndRules.ActAndRulesActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"></activity>
+        <activity
+            android:name=".HumanRecourse.HumanResourceForms.HRFamilyInformationActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".HumanRecourse.HumanResourceForms.EmployeeTransferActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".HumanRecourse.HumanResourceForms.EmployeePromotionsActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".HumanRecourse.HumanResourceForms.EmployeeTrainingInformationActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".HumanRecourse.HumanResourceForms.EmployeeServiceHistoryActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".HumanRecourse.HumanResourceForms.EmployeeInitialAppointmentActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".HumanRecourse.HumanResourceForms.EmployeeQualificationActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".HumanRecourse.HumanResourceActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
@@ -18,7 +39,7 @@
             android:name=".Dashboard.DashboardActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
-            android:name=".HumanRecourse.Personal_InfoActivity"
+            android:name=".HumanRecourse.HumanResourceForms.Personal_InfoActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".MainActivity"

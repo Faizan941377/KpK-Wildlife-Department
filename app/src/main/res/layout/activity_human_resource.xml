@@ -11,7 +11,7 @@
         android:id="@+id/action_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorGreen">
+        android:background="@color/colorBackBlue">
 
         <ImageView
             android:id="@+id/iv_humanResource_back"
@@ -83,6 +83,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_HumanResource_EmployeeInitialAppointment"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -104,6 +105,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_HumanResource_EmployeeServiceHistory"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -125,6 +127,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_HumanResource_EmployeeTrainingInformation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -147,6 +150,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_HumanResource_EmployeePromotion"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -168,6 +172,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_HumanResource_EmployeeTransfer"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
@@ -190,6 +195,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_HumanResource_HRFamilyInformation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="8dp"

@@ -1,25 +1,24 @@
-package com.example.kpkwildlifedepartment.HumanRecourse;
+package com.example.kpkwildlifedepartment.HumanRecourse.HumanResourceForms;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 
 import com.example.kpkwildlifedepartment.R;
 
-public class EmployeeQualificationActivity extends AppCompatActivity implements View.OnClickListener {
+public class HRFamilyInformationActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ImageView backBT;
+
+    ImageButton backBT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_employee_qualification);
+        setContentView(R.layout.activity_h_r_family_information);
 
-
-        backBT = findViewById(R.id.iv_employeeQualification_back);
-
+        backBT = findViewById(R.id.iv_HRFamilyInformation_back);
 
 
         backBT.setOnClickListener(this);
@@ -29,7 +28,7 @@ public class EmployeeQualificationActivity extends AppCompatActivity implements 
     public void onClick(View v) {
         switch (v.getId()){
 
-            case R.id.iv_employeeQualification_back:
+            case R.id.iv_HRFamilyInformation_back:
                 finish();
                 break;
         }

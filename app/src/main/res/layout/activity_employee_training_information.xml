@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HumanRecourse.HumanResourceForms.EmployeeQualificationActivity">
+    tools:context=".HumanRecourse.HumanResourceForms.EmployeeTrainingInformationActivity">
 
     <RelativeLayout
         android:id="@+id/action_bar"
@@ -13,8 +13,8 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorBackBlue">
 
-        <ImageView
-            android:id="@+id/iv_employeeQualification_back"
+        <ImageButton
+            android:id="@+id/iv_EmployeeTrainingInformation_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -28,16 +28,18 @@
             android:layout_centerInParent="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:text="Employee Qualification"
+            android:text="Employee Training Information"
             android:textColor="@color/colorWhite"
             android:textSize="20dp"
             android:textStyle="bold" />
 
     </RelativeLayout>
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,10 +58,9 @@
                 app:hintTextColor="@color/colorBlack">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_vdc_employeeNo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Qualification"
+                    android:hint="Training Serial Number"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -75,7 +76,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Grade/Division"
+                    android:hint="Training Name"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -91,7 +92,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Passing Year of Degree"
+                    android:hint="Institute"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -107,7 +108,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Last Institute"
+                    android:hint="City"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -121,28 +122,16 @@
                 app:hintTextColor="@color/colorBlack">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_celebrationOfEnvironmentalPlanting_chiefGuest"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Here we add PDF File "
-                    android:inputType="text" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/EditTextOutline"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:boxStrokeColor="@color/colorBlack"
-                app:hintTextColor="@color/colorBlack">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
                     android:hint="Institute Address"
-                    android:inputType="text" />
+                    android:inputType="textMultiLine" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextOutline"
@@ -154,10 +143,11 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Major Subject"
+                    android:hint="Oblige Sponsor"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/EditTextOutline"
@@ -169,11 +159,42 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Remarks"
-                    android:inputType="text" />
+                    android:hint="From"
+                    android:inputType="date" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextOutline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="To"
+                    android:inputType="date" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/EditTextOutline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Duration"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:id="@+id/bt_vdc_submit"
@@ -193,7 +214,6 @@
                     android:textSize="18dp" />
 
             </LinearLayout>
-
 
         </LinearLayout>
 
