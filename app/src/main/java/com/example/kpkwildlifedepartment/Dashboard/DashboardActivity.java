@@ -11,6 +11,7 @@ import com.example.kpkwildlifedepartment.ActAndRules.ActAndRulesActivity;
 import com.example.kpkwildlifedepartment.HumanRecourse.HumanResourceActivity;
 import com.example.kpkwildlifedepartment.License.LicenseActivity;
 import com.example.kpkwildlifedepartment.License.LicenseTypeActivity;
+import com.example.kpkwildlifedepartment.Offences.OffencesActivity;
 import com.example.kpkwildlifedepartment.ProtectedAreas.ProtectedAreasActivity;
 import com.example.kpkwildlifedepartment.ProtectedAreas.ProtectedAreasInfoActivity;
 import com.example.kpkwildlifedepartment.R;
@@ -21,6 +22,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     CardView actAndRulesBT;
     CardView protectedAreasBT;
     CardView licenseBT;
+    CardView offencesBT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         actAndRulesBT = findViewById(R.id.cv_ActAndRules);
         protectedAreasBT = findViewById(R.id.bt_dashboard_protectedAreas);
         licenseBT = findViewById(R.id.bt_dashboard_License);
+        offencesBT = findViewById(R.id.bt_dashboard_Offences);
 
 
 
@@ -38,6 +41,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         actAndRulesBT.setOnClickListener(this);
         protectedAreasBT.setOnClickListener(this);
         licenseBT.setOnClickListener(this);
+        offencesBT.setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +66,11 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
             case R.id.bt_dashboard_License:
                 Intent intent3 = new Intent(this, LicenseActivity.class);
                 startActivity(intent3);
+                break;
+
+            case R.id.bt_dashboard_Offences:
+                Intent intent4 = new Intent(this, OffencesActivity.class);
+                startActivity(intent4);
                 break;
         }
     }

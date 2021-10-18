@@ -321,6 +321,7 @@
                         android:gravity="center">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/bt_dashboard_Offences"
                             android:layout_width="130dp"
                             android:layout_height="130dp"
                             app:cardBackgroundColor="@color/colorBackBlue"
@@ -334,17 +335,17 @@
                                 android:layout_gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/ico_profile_logout"
+                                    android:id="@+id/ico_dashboard_offence"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_centerHorizontal="true"
-                                    android:background="@drawable/ico_logout"
+                                    android:background="@drawable/ico_offence"
                                     android:backgroundTint="@color/colorWhite" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@+id/ico_profile_logout"
+                                    android:layout_below="@+id/ico_dashboard_offence"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="8dp"
                                     android:text="Offences"
@@ -385,17 +386,17 @@
                                 android:layout_gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/ico_profile_dashboard"
+                                    android:id="@+id/ico_dashboard_brain"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_centerHorizontal="true"
-                                    android:background="@drawable/ico_logout"
+                                    android:background="@drawable/ico_brain"
                                     android:backgroundTint="@color/colorWhite" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@+id/ico_profile_dashboard"
+                                    android:layout_below="@+id/ico_dashboard_brain"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="8dp"
                                     android:gravity="center"
@@ -430,17 +431,17 @@
                                 android:layout_gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/ico_profile_logout"
+                                    android:id="@+id/ico_dashboard_briefcase"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_centerHorizontal="true"
-                                    android:background="@drawable/ico_logout"
+                                    android:background="@drawable/ico_breifcase"
                                     android:backgroundTint="@color/colorWhite" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@+id/ico_profile_logout"
+                                    android:layout_below="@+id/ico_dashboard_briefcase"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="8dp"
                                     android:gravity="center"
@@ -481,17 +482,17 @@
                                 android:layout_gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/ico_profile_dashboard"
+                                    android:id="@+id/ico_dashboard_roadKills"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_centerHorizontal="true"
-                                    android:background="@drawable/ico_logout"
+                                    android:background="@drawable/ico_road"
                                     android:backgroundTint="@color/colorWhite" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@+id/ico_profile_dashboard"
+                                    android:layout_below="@+id/ico_dashboard_roadKills"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="8dp"
                                     android:gravity="center"
@@ -527,17 +528,17 @@
                                 android:layout_gravity="center">
 
                                 <ImageView
-                                    android:id="@+id/ico_profile_logout"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
+                                    android:id="@+id/ico_dashboard_survey"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
                                     android:layout_centerHorizontal="true"
-                                    android:background="@drawable/ico_logout"
+                                    android:background="@drawable/ico_survey"
                                     android:backgroundTint="@color/colorWhite" />
 
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_below="@+id/ico_profile_logout"
+                                    android:layout_below="@+id/ico_dashboard_survey"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="8dp"
                                     android:text="Survey"
@@ -578,10 +579,10 @@
 
                                 <ImageView
                                     android:id="@+id/ico_profile_dashboard"
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
                                     android:layout_centerHorizontal="true"
-                                    android:background="@drawable/ico_logout"
+                                    android:background="@drawable/ico_participation"
                                     android:backgroundTint="@color/colorWhite" />
 
                                 <TextView
@@ -627,7 +628,7 @@
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_centerHorizontal="true"
-                                    android:background="@drawable/ico_logout"
+                                    android:background="@drawable/ico_conservation"
                                     android:backgroundTint="@color/colorWhite" />
 
                                 <TextView
