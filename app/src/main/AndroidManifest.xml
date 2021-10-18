@@ -9,8 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KpkWildlifeDepartment">
-        <activity android:name=".ActAndRules.ActAndRulesActivity"
+        <activity android:name=".License.LicenseTypeActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"></activity>
+        <activity
+            android:name=".License.ShootingLicenseTypeActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".License.LicenseActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ProtectedAreas.ProtecctAreasOfKPActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ProtectedAreas.ProtectedAreasActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ProtectedAreas.ProtectedAreasInfoActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ActAndRules.ActAndRulesActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".HumanRecourse.HumanResourceForms.HRFamilyInformationActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
