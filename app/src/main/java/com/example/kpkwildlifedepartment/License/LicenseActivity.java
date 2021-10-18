@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -20,6 +21,8 @@ public class LicenseActivity extends AppCompatActivity implements View.OnClickLi
 
     CardView shootingLicenseTypeBT;
     CardView licenseTypeBT;
+    ImageView backBT;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +31,13 @@ public class LicenseActivity extends AppCompatActivity implements View.OnClickLi
 
         shootingLicenseTypeBT= findViewById(R.id.bt_License_shootingLicense);
         licenseTypeBT = findViewById(R.id.bt_License_LicenseType);
+        backBT = findViewById(R.id.iv_License_back);
 
 
 
         shootingLicenseTypeBT.setOnClickListener(this);
         licenseTypeBT.setOnClickListener(this);
+        backBT.setOnClickListener(this);
     }
 
     @Override
@@ -45,6 +50,10 @@ public class LicenseActivity extends AppCompatActivity implements View.OnClickLi
 
             case R.id.bt_License_LicenseType:
                 AddViewLicenseType();
+                break;
+
+            case R.id.iv_License_back:
+                finish();
                 break;
         }
     }
