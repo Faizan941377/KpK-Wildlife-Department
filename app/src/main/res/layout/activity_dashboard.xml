@@ -373,6 +373,7 @@
                         android:gravity="center">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/bt_dashboard_PlanningAndDevelopment"
                             android:layout_width="130dp"
                             android:layout_height="130dp"
                             app:cardBackgroundColor="@color/colorBackBlue"
@@ -418,6 +419,7 @@
                         android:gravity="center">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/bt_dashboard_ProcurementAndAssets"
                             android:layout_width="130dp"
                             android:layout_height="130dp"
                             app:cardBackgroundColor="@color/colorBackBlue"
@@ -469,6 +471,7 @@
                         android:gravity="center">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/bt_dashboard_RoadKills"
                             android:layout_width="130dp"
                             android:layout_height="130dp"
                             app:cardBackgroundColor="@color/colorBackBlue"
@@ -514,7 +517,7 @@
                         android:gravity="center">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/bt_profile_logout"
+                            android:id="@+id/bt_dashboard_Survey"
                             android:layout_width="130dp"
                             android:layout_height="130dp"
                             app:cardBackgroundColor="@color/colorBackBlue"
@@ -610,7 +613,7 @@
                         android:gravity="center">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/bt_profile_logout"
+                            android:id="@+id/bt_dashboard_ConservationEducation"
                             android:layout_width="130dp"
                             android:layout_height="130dp"
                             app:cardBackgroundColor="@color/colorBackBlue"
