@@ -9,8 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KpkWildlifeDepartment">
-        <activity android:name=".ConservationEducation.ConservationEducationForms.CompetitionsActivity"
+        <activity android:name=".ConservationEducation.ConservationEducationForms.EducationalVideosActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"></activity>
+        <activity android:name=".ConservationEducation.ConservationEducationForms.EducationAndAwarenessMaterialActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".ConservationEducation.ConservationEducationForms.NoticeBoardActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".ConservationEducation.ConservationEducationForms.LecturesActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".ConservationEducation.ConservationEducationForms.SchoolNatureClubActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".ConservationEducation.ConservationEducationForms.StallExhibitionsActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".ConservationEducation.ConservationEducationForms.GamesActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:name=".ConservationEducation.ConservationEducationForms.PublicityBoardsActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.CompetitionsActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".ConservationEducation.ConservationEducationForms.DustbinsActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
