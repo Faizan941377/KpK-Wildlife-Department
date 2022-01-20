@@ -2,29 +2,45 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kpkwildlifedepartment">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KpkWildlifeDepartment">
-        <activity android:name=".ConservationEducation.ConservationEducationForms.EducationalVideosActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"></activity>
-        <activity android:name=".ConservationEducation.ConservationEducationForms.EducationAndAwarenessMaterialActivity"
+        android:theme="@style/Theme.KpkWildlifeDepartment"
+        android:usesCleartextTraffic="true">
+
+
+        <activity android:name=".Users.RegisterActivity"></activity>
+        <activity android:name=".Users.LoginActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
-        <activity android:name=".ConservationEducation.ConservationEducationForms.NoticeBoardActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
-        <activity android:name=".ConservationEducation.ConservationEducationForms.LecturesActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
-        <activity android:name=".ConservationEducation.ConservationEducationForms.SchoolNatureClubActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
-        <activity android:name=".ConservationEducation.ConservationEducationForms.StallExhibitionsActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
-        <activity android:name=".ConservationEducation.ConservationEducationForms.GamesActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
-        <activity android:name=".ConservationEducation.ConservationEducationForms.PublicityBoardsActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.EducationalVideosActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.EducationAndAwarenessMaterialActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.NoticeBoardActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.LecturesActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.SchoolNatureClubActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.StallExhibitionsActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.GamesActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".ConservationEducation.ConservationEducationForms.PublicityBoardsActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".ConservationEducation.ConservationEducationForms.CompetitionsActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />

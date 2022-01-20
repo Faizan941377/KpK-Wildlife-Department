@@ -8,6 +8,7 @@ import android.os.Handler;
 
 import com.example.kpkwildlifedepartment.Dashboard.DashboardActivity;
 import com.example.kpkwildlifedepartment.R;
+import com.example.kpkwildlifedepartment.Users.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, DashboardActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
