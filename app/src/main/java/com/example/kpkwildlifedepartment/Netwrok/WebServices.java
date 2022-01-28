@@ -2,6 +2,7 @@ package com.example.kpkwildlifedepartment.Netwrok;
 
 import com.example.kpkwildlifedepartment.Model.LoginModel;
 import com.example.kpkwildlifedepartment.Response.LoginResponse;
+import com.example.kpkwildlifedepartment.Response.PersonalInfoResponse;
 
 import io.reactivex.Observable;
 import retrofit2.Call;
@@ -18,4 +19,8 @@ public interface WebServices {
             @Field("email") String email,
             @Field("password") String password
     );
+
+    @FormUrlEncoded
+    @POST("Home/BasicHumanResource")
+    Call<PersonalInfoResponse> personalInfoResponse();
 }

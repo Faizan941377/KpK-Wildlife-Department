@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -20,10 +22,28 @@ public class Personal_InfoActivity extends AppCompatActivity implements View.OnC
 
 
     ImageView backBT;
-    Spinner positionEmployeeSP;
-    Spinner BPS_SP;
-    Spinner GenderSP;
     Spinner maritalStatusSP;
+    EditText firstNameET;
+    EditText lastNameET;
+    EditText emailET;
+    EditText CNICET;
+    EditText addressET;
+    EditText cityET;
+    Spinner positionEmployeeSP;
+    EditText postalCodeET;
+    Spinner BPS_SP;
+    EditText designationET;
+    EditText mobileNumberET;
+    EditText officeNumberET;
+    EditText dateOfBirthET;
+    EditText religionET;
+    Spinner GenderSP;
+    EditText divisionET;
+    EditText maritalStatusET;
+
+
+
+    LinearLayout personalInfoBT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +55,20 @@ public class Personal_InfoActivity extends AppCompatActivity implements View.OnC
         BPS_SP = findViewById(R.id.sp_PersonalInfo_BPS);
         GenderSP = findViewById(R.id.sp_PersonalInfo_Gender);
         maritalStatusSP = findViewById(R.id.sp_PersonalInfo_Marital_Status);
+        personalInfoBT = findViewById(R.id.bt_PersonalInfo_submit);
+        firstNameET = findViewById(R.id.et_personalInfo_firstName);
+        lastNameET = findViewById(R.id.et_personalInfo_ListName);
+        emailET = findViewById(R.id.et_personalInfo_email);
+        CNICET = findViewById(R.id.et_personalInfo_CNIC);
+        addressET = findViewById(R.id.et_personalInfo_address);
+        cityET = findViewById(R.id.et_personalInfo_city);
+        postalCodeET = findViewById(R.id.et_personalInfo_postalCode);
+        designationET = findViewById(R.id.et_personalInfo_designation);
+        mobileNumberET = findViewById(R.id.et_personalInfo_mobileNumber);
+        officeNumberET = findViewById(R.id.et_personalInfo_officeNumber);
+        dateOfBirthET = findViewById(R.id.et_personalInfo_dateOfBirth);
+        religionET = findViewById(R.id.et_personalInfo_religion);
+        divisionET = findViewById(R.id.et_personalInfo_division);
 
 
         backBT.setOnClickListener(this);
@@ -48,7 +82,7 @@ public class Personal_InfoActivity extends AppCompatActivity implements View.OnC
     private void marital_Status() {
 
         ArrayList<EmployeePromotionBPS> dataList = new ArrayList<>();
-        EmployeePromotionBPS user = new EmployeePromotionBPS("1", "Select Gender");
+        EmployeePromotionBPS user = new EmployeePromotionBPS("1", "Choose");
         EmployeePromotionBPS user1 = new EmployeePromotionBPS("1", "Married");
         EmployeePromotionBPS user2 = new EmployeePromotionBPS("1", "Unmarried");
 
@@ -313,6 +347,34 @@ public class Personal_InfoActivity extends AppCompatActivity implements View.OnC
             case R.id.iv_personalInfo_back:
                 finish();
                 break;
+
+            case R.id.bt_PersonalInfo_submit:
+                SubmitPersonalInfo();
+                break;
         }
+    }
+
+    private void SubmitPersonalInfo() {
+
+        String firstName = firstNameET.getText().toString().trim();
+        String lastName = lastNameET.getText().toString().trim();
+        String email = emailET.getText().toString().trim();
+        String CNIC = CNICET.getText().toString().trim();
+        String address = addressET.getText().toString().trim();
+        String city = cityET.getText().toString().trim();
+        String positionEmployee = positionEmployeeSP.getSelectedItem().toString();
+        String postalCode = postalCodeET.getText().toString().trim();
+        String selectBPS = BPS_SP.getSelectedItem().toString();
+        String designation = designationET.toString().trim();
+        String mobileNumber = mobileNumberET.toString().trim();
+        String officeNumber = officeNumberET.toString().trim();
+        String dateOfBirth = dateOfBirthET.toString().trim();
+        String religion = religionET.toString().trim();
+        String gender = GenderSP.getSelectedItem().toString();
+        String division = divisionET.toString().trim();
+        String maritalStatus = maritalStatusSP.getSelectedItem().toString();
+
+
+
     }
 }

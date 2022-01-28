@@ -110,7 +110,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_employeeNo"
+                        android:id="@+id/et_personalInfo_firstName"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="First Name"
@@ -127,7 +127,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_employeeName"
+                        android:id="@+id/et_personalInfo_ListName"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Last Name"
@@ -143,7 +143,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_forestDivision"
+                        android:id="@+id/et_personalInfo_email"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Email"
@@ -161,7 +161,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_subDivision"
+                        android:id="@+id/et_personalInfo_CNIC"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="CNIC"
@@ -179,7 +179,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_village"
+                        android:id="@+id/et_personalInfo_address"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Address"
@@ -196,7 +196,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_vdcJfmc"
+                        android:id="@+id/et_personalInfo_city"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="City"
@@ -242,7 +242,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_date_establishment"
+                        android:id="@+id/et_personalInfo_postalCode"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Postal Code"
@@ -286,6 +286,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_personalInfo_designation"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Designation"
@@ -302,7 +303,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_contact"
+                        android:id="@+id/et_personalInfo_mobileNumber"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Mobile Number"
@@ -319,7 +320,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_JFMCWO"
+                        android:id="@+id/et_personalInfo_officeNumber"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Office Number"
@@ -337,6 +338,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_personalInfo_dateOfBirth"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Date Of Birth"
@@ -354,6 +356,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_personalInfo_religion"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Religion"
@@ -398,6 +401,7 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_personalInfo_division"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Division"
@@ -435,7 +439,7 @@
                 </RelativeLayout>
 
                 <LinearLayout
-                    android:id="@+id/bt_vdc_submit"
+                    android:id="@+id/bt_PersonalInfo_submit"
                     android:layout_width="match_parent"
                     android:layout_height="46dp"
                     android:layout_gravity="center"
