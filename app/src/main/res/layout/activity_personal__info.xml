@@ -169,6 +169,7 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextOutline"
                     android:layout_width="match_parent"
@@ -204,6 +205,34 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/ico_drop_down"
+                        android:backgroundTint="@color/colorBlack" />
+
+                    <Spinner
+                        android:id="@+id/sp_PersonalInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/spinner_style" />
+
+                </RelativeLayout>
+
+
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextOutline"
                     android:layout_width="match_parent"
@@ -221,22 +250,32 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/EditTextOutline"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:boxStrokeColor="@color/colorBlack"
-                    app:hintTextColor="@color/colorBlack">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_president"
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/ico_drop_down"
+                        android:backgroundTint="@color/colorBlack" />
+
+                    <Spinner
+                        android:id="@+id/sp_PersonalInfo_BPS"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="BPS"
-                        android:inputType="text" />
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/spinner_style" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/EditTextOutline"
@@ -298,24 +337,6 @@
                     app:hintTextColor="@color/colorBlack">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/et_vdc_totalMember"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Alternate Number"
-                        android:inputType="phone" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/EditTextOutline"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:boxStrokeColor="@color/colorBlack"
-                    app:hintTextColor="@color/colorBlack">
-
-                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Date Of Birth"
@@ -340,53 +361,32 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/EditTextOutline"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:boxStrokeColor="@color/colorBlack"
-                    app:hintTextColor="@color/colorBlack">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
 
-                    <com.google.android.material.textfield.TextInputEditText
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/ico_drop_down"
+                        android:backgroundTint="@color/colorBlack" />
+
+                    <Spinner
+                        android:id="@+id/sp_PersonalInfo_Gender"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Gender"
-                        android:inputType="text" />
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/spinner_style" />
 
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/EditTextOutline"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:boxStrokeColor="@color/colorBlack"
-                    app:hintTextColor="@color/colorBlack">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Domicile District"
-                        android:inputType="text" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/EditTextOutline"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:boxStrokeColor="@color/colorBlack"
-                    app:hintTextColor="@color/colorBlack">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Insurance Policy"
-                        android:inputType="text" />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
 
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -400,42 +400,39 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:hint="Marital Status"
+                        android:hint="Division"
                         android:inputType="text" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/EditTextOutline"
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:boxStrokeColor="@color/colorBlack"
-                    app:hintTextColor="@color/colorBlack">
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
 
-                    <com.google.android.material.textfield.TextInputEditText
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/ico_drop_down"
+                        android:backgroundTint="@color/colorBlack" />
+
+                    <Spinner
+                        android:id="@+id/sp_PersonalInfo_Marital_Status"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Employee Position"
-                        android:inputType="text" />
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/spinner_style" />
 
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/EditTextOutline"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:boxStrokeColor="@color/colorBlack"
-                    app:hintTextColor="@color/colorBlack">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Project"
-                        android:inputType="text" />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:id="@+id/bt_vdc_submit"

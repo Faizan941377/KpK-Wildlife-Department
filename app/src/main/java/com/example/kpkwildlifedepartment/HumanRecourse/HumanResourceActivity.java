@@ -52,6 +52,7 @@ public class HumanResourceActivity extends AppCompatActivity implements View.OnC
 
 
 
+
         backBT.setOnClickListener(this);
         personalInfoBT.setOnClickListener(this);
         qualificationBT.setOnClickListener(this);
@@ -62,7 +63,10 @@ public class HumanResourceActivity extends AppCompatActivity implements View.OnC
         employeeTransferBT.setOnClickListener(this);
         hrFamilyInformationBT.setOnClickListener(this);
 
+
     }
+
+
 
     @Override
     public void onClick(View v) {

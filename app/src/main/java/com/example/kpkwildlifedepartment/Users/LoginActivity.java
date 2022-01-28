@@ -2,12 +2,14 @@ package com.example.kpkwildlifedepartment.Users;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.kpkwildlifedepartment.Dashboard.DashboardActivity;
 import com.example.kpkwildlifedepartment.Netwrok.RetrofitClient;
 import com.example.kpkwildlifedepartment.R;
 import com.example.kpkwildlifedepartment.Response.LoginResponse;
@@ -64,6 +66,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     LoginResponse loginResponse = response.body();
                     if (response.isSuccessful()) {
                         Toast.makeText(LoginActivity.this,loginResponse.getSucceeded(),Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), DashboardActivity.class);
+                        startActivity(intent);
+                        finish();
                     }
                 }
 
